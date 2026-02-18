@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricKing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+
+      .logo-box {
+        height: 60px;        /* navbar safe height */
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        height: 175px;        /* visually bigger */
+        width: auto;
+        margin-top: 15px;
+      }
+
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+
+      .testimonials .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #198754; /* Bootstrap green */
+      }
+
+    </style>
+</head>
+<body>
+
+  <header class="text-bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark container position-relative">
+
+  <a href="/" class="navbar-brand mx-lg-0 mx-auto logo-box">
+    <img src="images/Logo.png" class="logo">
+  </a>
+
+  <button 
+    class="navbar-toggler position-lg-static position-absolute end-0"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarContent"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Matches / Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+      </ul>
+
+      <div class="d-flex">
+        <button class="btn btn-outline-light me-2">Login</button>
+        <button class="btn btn-success">Join Now</button>
+      </div>
+
+    </div>
+
+  </nav>
+</header>
+
+
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+  <div class="py-5">
+
+    <p>"India’s Weekend Cricket Network"</p>
+    
+    <h1 class="display-5 fw-bold text-white">
+      Find Your Squad. Play Your Game. Rule the Pitch.
+    </h1>
+
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4" style="color: aliceblue;">
+        Join a growing community of cricket players. Compete, connect, and elevate your game.
+      </p>
+
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-outline-success btn-lg px-4 me-sm-3 fw-bold">
+          Find Your Team
+        </button>
+
+        <button type="button" class="btn btn-outline-light btn-lg px-4">
+          Browse Teams
+        </button>
+
+        
+      </div>
+      <p style="margin-top: 20px;">•500+ Active Players •100+ Matches Organized •25+ Grounds Available</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">Features</h2>
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+    <!-- Feature 1 -->
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+             class="bi bi-people-fill" viewBox="0 0 16 16">
+          <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 
+                   3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 
+                   1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 
+                   8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+        </svg>
+      </div>
+      <h3 class="fs-2">Find Players Nearby</h3>
+      <p>Connect instantly with cricket enthusiasts in your area and build your perfect weekend squad without the hassle.</p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+             class="bi bi-flag-fill" viewBox="0 0 16 16">
+          <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 
+                   8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15
+                   c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523
+                   -.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 
+                   8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 
+                   9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079
+                   .496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277
+                   2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 
+                   1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007
+                   .004-.002h.001"/>
+        </svg>
+      </div>
+      <h3 class="fs-2">Challenge Local Teams</h3>
+      <p>Create or accept match challenges, organize games easily, and compete with nearby teams anytime.</p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+             class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10
+                   m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg>
+      </div>
+      <h3 class="fs-2">Book Grounds & Nets</h3>
+      <p>Discover available cricket grounds or practice nets nearby and reserve slots quickly without endless calls.</p>
+    </div>
+
+    <!-- NEW Feature 4 -->
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+  <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1"/>
+</svg>
+      </div>
+      <h3 class="fs-2">Track Match Scores</h3>
+      <p>Record match scores live, maintain stats, and share results instantly with your team and friends.</p>
+    </div>
+
+    <!-- NEW Feature 5 -->
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+      </div>
+      <h3 class="fs-2">Player Ratings & Reviews</h3>
+      <p>Rate teammates and opponents, build credibility, and find reliable players for every match.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container px-4 py-5" id="custom-cards">
+
+  <h2 class="pb-2 border-bottom">How does CricKing actually work?</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+    <div class="col">
+  <div class="card h-100 rounded-4 shadow-lg">
+
+    <!-- Image -->
+    <img src="images/Join.png" 
+         class="card-img-top"
+         style="height: 250px; object-fit: cover;">
+
+    <!-- Text below image -->
+    <div class="card-body">
+      <h5 class="card-title">Join CricKing</h5>
+      <p class="card-text">
+        Sign up in seconds and become part of a growing community of cricket players near you.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="col">
+  <div class="card h-100 rounded-4 shadow-lg">
+
+    <!-- Image -->
+    <img src="images/Team.png" 
+         class="card-img-top"
+         style="height: 250px; object-fit: cover;">
+
+    <!-- Text below image -->
+    <div class="card-body">
+      <h5 class="card-title">Find or Create Your Team</h5>
+      <p class="card-text">
+        Connect with nearby players, build your squad, or challenge other teams easily.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+   <div class="col">
+  <div class="card h-100 rounded-4 shadow-lg">
+
+    <!-- Image -->
+    <img src="images/Score.png" 
+         class="card-img-top"
+         style="height: 250px; object-fit: cover;">
+
+    <!-- Text below image -->
+    <div class="card-body">
+      <h5 class="card-title">Play, Compete & Track Scores</h5>
+      <p class="card-text">
+        Book grounds, play matches, and record scores live just like professional cricket.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+<main>
+<div class="container">
+  <!-- Pricing Cards -->
+   <h2 class="pb-2 border-bottom" style="margin-bottom: 40px;">CricKing Membership</h2>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <!-- Free Plan -->
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">
+            ₹0 <small class="text-body-secondary fw-light">/mo</small>
+          </h1>
+
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Browse nearby players</li>
+            <li>Join public matches</li>
+            <li>Basic player profile</li>
+            <li>Community access</li>
+          </ul>
+
+          <button class="w-100 btn btn-lg btn-outline-success">
+            Join Free
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-success">
+        <div class="card-header py-3 text-bg-success border-success">
+          <h4 class="my-0 fw-normal">Pro Player</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">
+            ₹199 <small class="text-body-secondary fw-light">/mo</small>
+          </h1>
+
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Create your own team</li>
+            <li>Challenge other teams</li>
+            <li>Basic live score tracking</li>
+            <li>Priority player matching</li>
+          </ul>
+
+          <button class="w-100 btn btn-lg btn-success">
+            Go Pro
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elite Plan -->
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Elite</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">
+            ₹399 <small class="text-body-secondary fw-light">/mo</small>
+          </h1>
+
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Ground & net booking access</li>
+            <li>Full live score tracking</li>
+            <li>Advanced player statistics</li>
+            <li>Exclusive tournaments</li>
+          </ul>
+
+          <button class="w-100 btn btn-lg btn-success">
+            Go Elite
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</main>
+
+<!-- Testimonials Section -->
+<section class="container py-5 testimonials">
+
+  
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">What Players Say About CricKing</h2>
+    <p class="text-muted">
+      Join hundreds of cricket lovers already finding teams and playing matches.
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Testimonial 1 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center p-3">
+        <img src="images/Sudheer.jpeg"
+             class="rounded-circle mx-auto mb-3"
+             alt="Player">
+        <div class="card-body">
+          <p class="card-text">
+            “Finally found a weekend team without begging friends.
+            CricKing made it super easy!”
+          </p>
+          <h6 class="fw-bold mb-0">Sudheer Babu</h6>
+          <small class="text-muted">Amateur Cricketer</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center p-3">
+        <img src="images/Thaman.jpg"
+             class="rounded-circle mx-auto mb-3"
+             alt="Player">
+        <div class="card-body">
+          <p class="card-text">
+            “Booked a ground and organized a full match in one day.
+            Amazing platform for cricket lovers.”
+          </p>
+          <h6 class="fw-bold mb-0">Thaman S.</h6>
+          <small class="text-muted">Team Captain</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100 text-center p-3">
+        <img src="images/Akhil.jpg"
+             class="rounded-circle mx-auto mb-3"
+             alt="Player">
+        <div class="card-body">
+          <p class="card-text">
+            “The live score tracking makes our gully matches feel like IPL.
+            Totally love CricKing!”
+          </p>
+          <h6 class="fw-bold mb-0">Akhil Akkineni</h6>
+          <small class="text-muted">Weekend Player</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container text-md-left">
+
+    <div class="row text-md-left">
+
+      <!-- Brand -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+        <h5 class="fw-bold text-uppercase mb-3">CricKing</h5>
+        <p>
+          Connecting cricket lovers to play, compete, and enjoy the game.
+          Find teams, book grounds, and track matches all in one place.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+        <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Features</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Pricing</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Contact</a></p>
+      </div>
+
+      <!-- Membership -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Membership</h6>
+        <p><a href="#" class="text-light text-decoration-none">Free Plan</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Pro Player</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Elite</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+        <p>Email: support@cricking.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>India</p>
+      </div>
+
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Bottom Footer -->
+    <div class="row align-items-center">
+
+      <div class="col-md-7 col-lg-8">
+        <p class="mb-0">
+          © 2026 CricKing. All rights reserved.
+        </p>
+      </div>
+
+      <div class="col-md-5 col-lg-4 text-md-end">
+        <a href="#" class="text-light me-3">Instagram</a>
+        <a href="#" class="text-light me-3">Twitter</a>
+        <a href="#" class="text-light">LinkedIn</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
